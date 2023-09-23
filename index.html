@@ -9,69 +9,85 @@
 		<script src="./index.js" defer></script>
 	</head>
 	<body>
+
+    <div class="header"> <h1> Simply Calculate </h1>
+    </div>
 		<div class="main">
-			<div class="screen">this is the screen div</div>
+    
+			<div class="screen">
+        <div data-previous-operand class="previousOperand"></div>
+        <div data-current-operand class="currentOperand"></div>
+      </div>
 			<div class="buttons">
 
-					<div class="row1">
-						<input type="button" id="clear" class="specialBttns" value="C" />
-						<input
-							type="button"
-							id="pos-neg"
-							class="specialBttns"
-							value="+/-"
-						/>
-						<input type="button" id="percent" class="specialBttns" value="%" />
-            <input type="button" id="divide" class="operatorBttns" value="/" />
+					<div class="rows">
+						<input data-clear type="button" id="clear" class="specialBttns" value="C" />
+            <input data-allClear type="button" id="allClear" class="specialBttns" value="AC">
+            
+            <input data-operation type="button" id="/" class="operatorBttns" value="/" />
 						
 					</div>
+							
+							
+							
+							
+						
+						
 
 
-					<div class="row2">
-						<input type="button" id="7" class="numBttns" value="7" />
-						<input type="button" id="8" class="numBttns" value="8" />
-						<input type="button" id="9" class="numBttns" value="9" />
-            <input
-							type="button"
-							id="multiply"
-							class="operatorBttns"
-							value="X"
-						/>
+					<div class="rows">
+						<input data-number type="button" id="7" class="numBttns" value="7" />
+						<input data-number type="button" id="8" class="numBttns" value="8" />
+						<input data-number type="button" id="9" class="numBttns" value="9" />
+            <input data-operation type="button" id="x" class="operatorBttns" value="x" />
+						</div>	
+							
+							
+						
+					
+
+
+
+					<div class="rows">
+						<input data-number type="button" id="4" class="numBttns" value="4" />
+						<input data-number type="button" id="5" class="numBttns" value="5" />
+						<input data-number type="button" id="6" class="numBttns" value="6" />
+            	<input data-operation type="button" id="-" class="operatorBttns" value="-"/>
+              
+						</div>	
+							
+							
+							
+						
+					
+
+
+					<div class="rows">
+						<input data-number type="button" id="1" class="numBttns" value="1" />
+						<input data-number type="button" id="2" class="numBttns" value="2" />
+						<input data-number type="button" id="3" class="numBttns" value="3" />
+             <input data-operation type="button" id="+" class="operatorBttns" value="+" />
 					</div>
 
 
 
-					<div class="row3">
-						<input type="button" id="4" class="numBttns" value="4" />
-						<input type="button" id="5" class="numBttns" value="5" />
-						<input type="button" id="6" class="numBttns" value="6" />
-            	<input
-							type="button"
-							id="subtract"
-							class="operatorBttns"
-							value="-"
-						/>
-					</div>
-
-
-					<div class="row4">
-						<input type="button" id="1" class="numBttns" value="1" />
-						<input type="button" id="2" class="numBttns" value="2" />
-						<input type="button" id="3" class="numBttns" value="3" />
-             <input type="button" id="add" class="operatorBttns" value="+" />
-					</div>
-
-
-
-					<div class="row5">
-						<input type="button" id="0" class="zeroBttn" value="0" />
-						<input type="button" id="decimal" class="numBttns" value="." />
-            <input type="button" id="submit" class="operatorBttns" value="=" />
+					<div class="rows">
+						<input data-number type="button" id="zeroBttn" class="numBttns" value="0" />
+             
+						<input data-number type="button" id="." class="numBttns" value="." />
+            <input  data-equals type="button" id="=" class="operatorBttns" value="=" />
            
 					</div>
 				
 				</div>
 			</div>
 		</div>
+    <div class="footer">
+  <p>
+    Copyright 
+    <a href="https://github.com/AveryRane">
+      <img src="./public/images/github-mark.png"></img>
+        <em> Avery Shepard 2023</a></em></p>
+        </div
 	</body>
 </html>
